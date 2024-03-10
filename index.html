@@ -1,7 +1,685 @@
----
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicons 
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon_60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon_76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon_120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon_152x152.png">-->
+
+    <!-- Title -->
+    <title>Rodolfo Aravena Collipal</title>
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/plugins/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="assets/plugins/slick-carousel/slick/slick.css" />
+
+    <!-- CSS Icons -->
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" />
+
+    <!-- CSS Base -->
+    <link id="theme" rel="stylesheet" href="assets/css/themes/theme-blue.min.css" />
+
+</head>
+
+<body class="navigation-vertical page-scrolling dark-scheme">
+
+    <!-- Loader -->
+    <div id="page-loader">
+        <svg class="loader" viewBox="0 0 28 28">
+            <circle cx="14" cy="14" r="12" stroke-width="2"></circle>
+        </svg>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navigation" class="navigation-vertical dark">
+
+        <!-- Photo -->
+        <a href="index.html" class="photo bg-image-container">
+            <img src="assets/img/photos/perfil.jpg" alt="">
+        </a>
+
+        <!-- Navigation Primary -->
+        <ul class="nav nav-primary-vertical">
+            <li class="nav-item">
+                <a href="#start" class="nav-link">
+                    <span id="item-menu-start">Inicio</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#resume" class="nav-link">
+                    <span id="item-menu-resume">CV</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#services" class="nav-link">
+                    <span id="item-menu-services">Servicios</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#portfolio" class="nav-link">
+                    <span id="item-menu-portfolio">Portafolio</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">
+                    <span id="item-menu-contact">Contacto</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- Navigation / End -->
+
+    <!-- Navigation Toggle -->
+    <a id="navigation-toggle" class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <!-- Content -->
+    <div id="content">
+
+        <!-- Section - Start -->
+        <section id="start" class="section section-home-basic fullheight dark bg-dark" data-scheme="dark" data-local-scroll>
+
+            <!-- BG Image -->
+            <div class="bg-image-container">
+                <img src="assets/img/photos/portada.jpg" alt="">
+            </div>
+
+            <!-- Section Content -->
+            <div class="section-content">
+                <div class="container-wide" data-local-scroll>
+                    <div class="row align-items-center">
+                        <div class="col-xl-7 col-10">
+                            <h1 class="mb-0">
+                                <span id="front-presentation-page" class="typing">Hola, soy
+                                    <strong>Rodolfo Aravena Collipal</strong> - Ingeniero en Computación e Informática, desarrollador
+                                    Back-end y Front-end en Web y Móvil</span>
+                                <a href="#resume" class="btn-go show-after-typing ml-4">
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Points -->
+            <div class="points-container">
+                <!-- Point -->
+                <a href="#resume" class="point" data-x="30%" data-y="15%">
+                    <span class="point-indicator">
+                        <svg class="point-indicator-circle" viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="23" stroke-width="2"></circle>
+                        </svg>
+                        <span class="point-indicator-hover"></span>
+                        <svg class="point-indicator-plus" viewBox="0 0 48 48">
+                            <path d="M24,24 v-10 v20" stroke-width="2"></path>
+                            <path d="M24,24 h-10 h20" stroke-width="2"></path>
+                        </svg>
+                    </span>
+                    <span class="point-title">Mira mis hábilidades</span>
+                </a>
+                <!-- Point -->
+                <a href="#services" class="point" data-x="40%" data-y="40%">
+                    <span class="point-indicator">
+                        <svg class="point-indicator-circle" viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="23" stroke-width="2"></circle>
+                        </svg>
+                        <span class="point-indicator-hover"></span>
+                        <svg class="point-indicator-plus" viewBox="0 0 48 48">
+                            <path d="M24,24 v-10 v20" stroke-width="2"></path>
+                            <path d="M24,24 h-10 h20" stroke-width="2"></path>
+                        </svg>
+                    </span>
+                    <span class="point-title">¿Qué puedo hacer por ti?</span>
+                </a>
+                <!-- Point -->
+                <a href="#portfolio" class="point" data-x="80%" data-y="50%">
+                    <span class="point-indicator">
+                        <svg class="point-indicator-circle" viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="23" stroke-width="2"></circle>
+                        </svg>
+                        <span class="point-indicator-hover"></span>
+                        <svg class="point-indicator-plus" viewBox="0 0 48 48">
+                            <path d="M24,24 v-10 v20" stroke-width="2"></path>
+                            <path d="M24,24 h-10 h20" stroke-width="2"></path>
+                        </svg>
+                    </span>
+                    <span class="point-title">¡Mira mis trabajos!</span>
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Section - Resume -->
+        <section id="resume" class="section" data-scheme="light">
+
+            <!-- Section Content -->
+            <div class="section-content">
+                <div class="container-slim">
+                    <!-- Section Header -->
+                    <div class="section-header">
+                        <img src="assets/img/photos/perfil.min.jpg" alt="" class="section-header-image">
+                        <div class="section-header-content">
+                            <span class="typing">Este es mi currículum... </span>
+                        </div>
+                    </div>
+                    <!-- Resume - About -->
+                    <div class="resume-box">
+                        <p class="lead text-lg">Tengo
+                            <span id="yearsOld"></span> años de experiencia desarrollando en back-end y front-end en sitios Web usando frameworks
+                            de desarrollo tales como ASP.NET, MVC y Django.</p>
+                        <p class="lead mb-5">Y desde antes de egresar de mi carrera he desarrollado apps móviles para Android y Windows, y pronto
+                            en iOS utilizando Xamarin Framework.</p>
+                    </div>
+                    <!-- Resume - Skills -->
+                    <div class="resume-box image-edge row">
+                        <div class="col-md-8 push-md-4">
+                            <!-- Image -->
+                            <div class="image left">
+                                <img src="assets/img/items/surface-book.png" alt="" class="animated" data-animation="fadeInLeft">
+                            </div>
+                            <h5 class="mb-5">Hábilidades técnicas</h5>
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                            <h6 class="mb-4">HTML, CSS &amp; JQuery</h6>
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <h6 class="mb-4">C#</h6>
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                            <h6 class="mb-4">Python</h6>
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                            <h6 class="mb-4">Java</h6>
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                            <h6 class="mb-4">Oracle PL/SQL</h6>
+                            <!-- Progress Bar -->
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 62%" aria-valuenow="62" aria-valuemin="0" aria-valuemax="100">
+                                    <span>62%</span>
+                                </div>
+                            </div>
+                            <h6 class="mb-4">MySql</h6>
+                        </div>
+                    </div>
+                    <!-- Resume - Education & Jobs -->
+                    <div class="resume-box image-edge text-center">
+                        <h5 class="mb-5">Experiencia laboral</h5>
+                        <div class="row">
+                            <div class="col-md-10 push-md-1">
+                                <!-- Image -->
+                                <div class="image left">
+                                    <img src="assets/img/items/docs.png" alt="" class="animated" data-animation="fadeInLeft">
+                                </div>
+                                <!-- Image -->
+                                <div class="image right">
+                                    <img src="assets/img/items/coffee.png" alt="" class="animated" data-animation="fadeInRight">
+                                </div>
+                                <!-- Timeline -->
+                                <div class="timeline">
+                                    <!-- Timeline Event -->
+                                    <div class="timeline-event">
+                                        <div class="timeline-event-point"></div>
+                                        <div class="timeline-event-date">2017 - a la Fecha</div>
+                                        <div class="timeline-event-content">
+                                            <h5 class="timeline-event-title">Desarrollador Freelance</h5>
+                                            <span class="timeline-event-caption text-muted">CUBESOA</span>
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Event -->
+                                    <div class="timeline-event">
+                                        <div class="timeline-event-point"></div>
+                                        <div class="timeline-event-date">2015 - a la Fecha</div>
+                                        <div class="timeline-event-content">
+                                            <!--  <img src="assets/img/logotypes/envato.svg" width="90" class="mb-4" alt=""> -->
+                                            <h5 class="timeline-event-title">Técnico Soporte Ingeniería</h5>
+                                            <span class="timeline-event-caption text-muted">Universidad Andrés Bello</span>
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Event -->
+                                    <div class="timeline-event">
+                                        <div class="timeline-event-point"></div>
+                                        <div class="timeline-event-date">08/2014 - 02/2015</div>
+                                        <div class="timeline-event-content">
+                                            <h5 class="timeline-event-title">Software Developer</h5>
+                                            <span class="timeline-event-caption text-muted">Alominig LTDA.</span>
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Event -->
+                                    <div class="timeline-event">
+                                        <div class="timeline-event-point"></div>
+                                        <div class="timeline-event-date">01/2012 - 03/2013</div>
+                                        <div class="timeline-event-content">
+                                            <h5 class="timeline-event-title">Analista de Sistemas de Software</h5>
+                                            <span class="timeline-event-caption text-muted">Duran LTDA.</span>
+                                        </div>
+                                    </div>
+                                    <!-- Timeline Event -->
+                                    <div class="timeline-event">
+                                        <div class="timeline-event-point"></div>
+                                        <div class="timeline-event-date">2009 - a la Fecha</div>
+                                        <div class="timeline-event-content">
+                                            <h5 class="timeline-event-title">Compromiso docente</h5>
+                                            <span class="timeline-event-caption text-muted">Universidad Andrés Bello</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Resume - Languages -->
+                    <div class="resume-box image-edge row">
+                        <div class="col-md-7">
+                            <!-- Image -->
+                            <div class="image right">
+                                <img src="assets/img/items/book.png" alt="" class="animated" data-animation="fadeInRight">
+                            </div>
+                            <h5 class="mb-5">Idiomas</h5>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <!-- Chart -->
+                                    <div class="single-chart">
+                                        <div class="chart" data-bar-color="#35A4F0" data-track-color="#EEEEEE" data-percent="50">
+                                            <div class="chart-content">
+                                                <span class="value">
+                                                    <span>3</span>/5</span>
+                                                <h6 class="title">Inglés</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <!-- Chart -->
+                                    <div class="single-chart">
+                                        <div class="chart" data-bar-color="#35A4F0" data-track-color="#EEEEEE" data-percent="100">
+                                            <div class="chart-content">
+                                                <span class="value">Nativo</span>
+                                                <h6 class="title">Español</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section - Services -->
+        <section id="services" class="section section-slider fullheight dark border-top" data-scheme="dark">
+
+            <!-- Section Content -->
+            <div class="section-content">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="section-header">
+                        <img src="assets/img/photos/perfil.min.jpg" alt="" class="section-header-image">
+                        <div class="section-header-content">
+                            <span class="typing">¿Qué puedo hacer por ti?</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slides -->
+                <div class="section-slides" data-local-scroll>
+                    <!-- Slide -->
+                    <div class="slide dark">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="display-4">Aplicaciones Web</h2>
+                                    <p class="lead text-muted">Desarrollo de aplicaciones webs utilizando lo último de la vanguardia en técnologías.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide -->
+                    <div class="slide light">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="display-4">Aplicaciones Móviles</h2>
+                                    <p class="lead text-muted">Lo último en desarrollo multiplataforma utilizando Xamarin Framework</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide -->
+                    <div class="slide dark">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h2 class="display-4">WordPress y Drupal</h2>
+                                    <p class="lead text-muted">Creación e implementación de sitios web utilizando creadores de contenido (CMS) tales
+                                        como WordPress y Drupal.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Section Backgrounds -->
+            <div class="section-bgs">
+                <div class="slide bg-dark">
+                    <div class="image right col-md-6 push-md-6">
+                        <div class="bg-image-container">
+                            <img src="assets/img/photos/developer/service01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image right col-md-6 push-md-6">
+                        <div class="bg-image-container">
+                            <img src="assets/img/photos/developer/service02.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide bg-dark">
+                    <div class="image right col-md-6 push-md-6">
+                        <div class="bg-image-container">
+                            <img src="assets/img/photos/developer/service03.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image right col-md-6 push-md-6">
+                        <div class="bg-image-container">
+                            <img src="assets/img/photos/developer/service04.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section - Portfolio -->
+        <section id="portfolio" class="section" data-scheme="light">
+
+            <!-- Section Content -->
+            <div class="section-content">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="section-header">
+                        <img src="assets/img/photos/perfil.min.jpg" alt="" class="section-header-image">
+                        <div class="section-header-content">
+                            <span class="typing">Estos son algunos de los trabajos más destacados que he realizado</span>
+                            <!-- Filter - Isotope -->
+                            <!-- <ul class="nav nav-pills filter-isotope show-after-typing" data-filter-list="#works-list">
+                                <li class="nav-item"><a href="#" class="nav-link active" data-filter="*">All</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" data-filter=".Webdesign">Webdesign</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" data-filter=".Webdevelopment">Webdevelopment</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link" data-filter=".Other">Other</a></li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container-wide">
+                    <!-- Filter - List Isotope -->
+                    <div id="works-list" class="row filter-list-isotope">
+                        <div class="col-md-4 col-sm-6 Webdesign">
+                            <!-- Image Box -->
+                            <figure class="image-box">
+                                <div class="image">
+                                    <a href="case-study-developer.html" data-toggle="ajax-modal">
+                                        <img src="assets/img/projects/cubesoa-01.jpg" alt="">
+                                        <img src="assets/img/projects/cubesoa-02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h5 class="title">
+                                        <a href="case-study-developer.html" data-toggle="ajax-modal">2017 - Página principal CUBESOA</a>
+                                    </h5>
+                                    <span class="caption text-muted">Diseño Front-End</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 Webdevelopment">
+                            <!-- Image Box -->
+                            <figure class="image-box">
+                                <div class="image">
+                                    <a href="case-study-developer.html" data-toggle="ajax-modal">
+                                        <img src="assets/img/projects/aiefi01.jpg" alt="">
+                                        <img src="assets/img/projects/aiefi02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h5 class="title">
+                                        <a href="case-study-developer.html" data-toggle="ajax-modal">2016 - Página web Académia Innovación y Emprendimiento</a>
+                                    </h5>
+                                    <span class="caption text-muted">WordPress</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 Webdevelopment">
+                            <!-- Image Box -->
+                            <figure class="image-box">
+                                <div class="image">
+                                    <a href="case-study-developer.html" data-toggle="ajax-modal">
+                                        <img src="assets/img/projects/icinf01.jpg" alt="">
+                                        <img src="assets/img/projects/icinf02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h5 class="title">
+                                        <a href="case-study-developer.html" data-toggle="ajax-modal">2015 - Blog ICINF</a>
+                                    </h5>
+                                    <span class="caption text-muted">DRUPAL</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 Webdesign">
+                            <!-- Image Box -->
+                            <figure class="image-box">
+                                <div class="image">
+                                    <a href="case-study-developer.html" data-toggle="ajax-modal">
+                                        <img src="assets/img/projects/eventoz01.jpg" alt="">
+                                        <img src="assets/img/projects/eventoz02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h5 class="title">
+                                        <a href="case-study-developer.html" data-toggle="ajax-modal">2015 - Eventoz</a>
+                                    </h5>
+                                    <span class="caption text-muted">Universal Windows App C#</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 Webdevelopment">
+                            <!-- Image Box -->
+                            <figure class="image-box">
+                                <div class="image">
+                                    <a href="case-study-developer.html" data-toggle="ajax-modal">
+                                        <img src="assets/img/projects/simulador-de-puntaje-udp-2014-01.jpg" alt="">
+                                        <img src="assets/img/projects/simulador-de-puntaje-udp-2014-02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h5 class="title">
+                                        <a href="case-study-developer.html" data-toggle="ajax-modal">2014 - Simulador de Puntajes UDP</a>
+                                    </h5>
+                                    <span class="caption text-muted">Aplicación Web ASP.NET</span>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="col-md-4 col-sm-6 Other">
+                            <!-- Image Box -->
+                            <figure class="image-box">
+                                <div class="image">
+                                    <a href="case-study-developer.html" data-toggle="ajax-modal">
+                                        <img src="assets/img/projects/mylittlehub01.jpg" alt="">
+                                        <img src="assets/img/projects/mylittlehub02.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="content text-center">
+                                    <h5 class="title">
+                                        <a href="case-study-developer.html" data-toggle="ajax-modal">2012 - My Little Hub</a>
+                                    </h5>
+                                    <span class="caption text-muted">ANDROID</span>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section - Contact -->
+        <section id="contact" class="section section-contact fullheight bg-dark dark" data-scheme="dark">
+
+           
+
+            <!-- Section Content -->
+            <div class="section-content pos-v-center">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="section-header">
+                        <img src="assets/img/photos/perfil.min.jpg" alt="" class="section-header-image">
+                        <div class="section-header-content">
+                            <span class="typing">Contáctame</span>
+                            <div class="section-header-caption show-after-typing222">
+                                <div class="module">
+                                    <span class="mr-2">¿Dónde me puede ubicar?</span>
+                                    <label class="selector">
+                                        <input type="checkbox" class="selector-input" data-toggle="contact-map">
+                                        <span class="selector-indicator"></span>
+                                    </label>
+                                </div>
+                                <div class="module">
+                                    <span class="mr-2">¿Tiene alguna pregunta?</span>
+                                    <a href="https://twitter.com/rodo_aravena" class="btn btn-primary btn-sm">Búsqueme en Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Section Contact -->
+                    <div class="row section-contact-content pt-lg-5 pb-lg-5">
+                        <div class="col-md-12">
+                            <h6 class="text-muted mb-2">Encuéntrame en:</h6>
+                            <a href="https://www.facebook.com/rodoaravena/" target="_blank" class="icon icon-circle icon-hover icon-sm icon-facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/rodo_aravena" target="_blank" class="icon icon-circle icon-hover icon-sm icon-twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/rodoaravena/" target="_blank" class="icon icon-circle icon-hover icon-sm icon-linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- Content / End -->
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark dark">
+
+        <div class="footer-content">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="spread-icons col-md-6 text-center text-md-right">
+                        <a href="https://www.facebook.com/rodoaravena/" target="_blank" class="icon icon-sm icon-white icon-hover">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/rodo_aravena" target="_blank" class="icon icon-sm icon-white icon-hover">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rodoaravena/" target="_blank" class="icon icon-sm icon-white icon-hover">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <p class="text-muted mt-3 mb-0">Copyright Rodolfo Aravena Collipal ©
+                            <span id="yearSpan"></span>.
+                            <br> Creado por
+                            <a href="http://cubesoa.com" target="_blank" class="link-inherit">CUBESOA</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer / End -->
+
+    <!-- Modal / Video -->
+    <div class="modal modal-video fade" id="modalVideo" role="dialog">
+        <button class="close" data-dismiss="modal"></button>
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <iframe height="500"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Plugins -->
+    <script src="assets/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="assets/plugins/jquery.appear/jquery.appear.js"></script>
+    <script src="assets/plugins/tether/dist/js/tether.min.js"></script>
+    <script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/jquery.scrollto/jquery.scrollTo.min.js"></script>
+    <script src="assets/plugins/jquery.localscroll/jquery.localScroll.min.js"></script>
+    <script src="assets/plugins/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/plugins/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="assets/plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="assets/plugins/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/plugins/typed.js/dist/typed.min.js"></script>
+    <script src="assets/plugins/easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="assets/plugins/snapsvg/dist/snap.svg-min.js"></script>
+    <script src="assets/plugins/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="assets/plugins/moment/moment.js"></script>
+
+    <!-- JS Core -->
+    <script src="assets/js/core.js"></script>
+
+    <!-- JS MyScript -->
+    <script src="assets/js/myscript.js"></script>
+</body>
+
+</html>
