@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Rodolfo Aravena Collipal — Portafolio</title>
+  <meta name="description" content="Portafolio de Rodolfo Aravena Collipal, ingeniero en computación e informática. Repositorios públicos de GitHub: web, arquitectura de software e inteligencia artificial.">
+  <meta name="theme-color" content="#f3efe6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#131411" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Rodolfo Aravena Collipal — Portafolio">
+  <meta property="og:description" content="Ingeniero en Computación e Informática. Repositorios públicos en GitHub.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/5356046?v=4">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@rodoac89">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.github.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..650&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try {
+      var storedTheme = localStorage.getItem("portfolio-theme");
+      if (storedTheme === "light" || storedTheme === "dark") {
+        document.documentElement.dataset.theme = storedTheme;
+      }
+    } catch (error) {}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rodolfo Aravena Collipal",
+    "jobTitle": "Ingeniero en Computación e Informática",
+    "url": "https://rodoaravena.cl",
+    "image": "https://avatars.githubusercontent.com/u/5356046?v=4",
+    "address": { "@type": "PostalAddress", "addressCountry": "CL" },
+    "sameAs": [
+      "https://github.com/rodoac89",
+      "https://www.linkedin.com/in/rodoaravena/",
+      "https://x.com/rodoac89"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#trabajo">Saltar al trabajo</a>
+  <div class="wrap">
+    <header class="mast">
+      <div class="mast-bar">
+        <p class="sheet">RA—01 <span>Portafolio</span></p>
+        <nav class="nav" aria-label="Contacto">
+          <a id="link-github" rel="me noopener noreferrer" target="_blank" href="https://github.com/rodoac89">GitHub</a>
+          <a id="link-site" rel="me noopener noreferrer" target="_blank" href="https://rodoaravena.cl">Currículum</a>
+          <a id="link-linkedin" rel="me noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/rodoaravena/">LinkedIn</a>
+          <a id="link-x" rel="me noopener noreferrer" target="_blank" href="https://x.com/rodoac89">X</a>
+          <button type="button" id="theme">Tema: auto</button>
+        </nav>
+      </div>
+      <div class="hero">
+        <div class="hero-title">
+          <img id="avatar" class="avatar" src="https://avatars.githubusercontent.com/u/5356046?v=4" width="96" height="96" alt="Retrato de Rodolfo Aravena Collipal">
+          <div>
+            <p class="kicker">Ingeniero en Computación e Informática</p>
+            <h1>Rodolfo<br><span class="line">Aravena</span> <span class="line">Collipal</span></h1>
+          </div>
+        </div>
+        <p class="bio" id="bio">Desarrollador de software orientado a web con tecnologías rest. Adentrado en el mundo de la Arquitectura de Software y A.I.</p>
+        <p class="meta" id="meta">Chile · En GitHub desde 2013</p>
+        <dl class="stats">
+          <div>
+            <dt>Propios</dt>
+            <dd id="stat-own">—</dd>
+          </div>
+          <div>
+            <dt>Forks</dt>
+            <dd id="stat-forks">—</dd>
+          </div>
+          <div>
+            <dt>Seguidores</dt>
+            <dd id="stat-followers">—</dd>
+          </div>
+        </dl>
+      </div>
+    </header>
+
+    <main id="trabajo" aria-label="Trabajo público">
+      <section id="featured-section" class="block" hidden>
+        <div class="section-head">
+          <h2>Destacados</h2>
+          <p>Entran solos cuando el repositorio tiene el tema <code>destacado</code>.</p>
+        </div>
+        <div id="featured" class="repo-list"></div>
+      </section>
+
+      <section class="block" aria-labelledby="list-heading">
+        <div class="section-head">
+          <h2 id="list-heading">Índice</h2>
+          <p id="status" aria-live="polite">Cargando repositorios…</p>
+        </div>
+        <div class="bar" id="langbar" aria-hidden="true"></div>
+        <p class="note">Cada tramo cuenta repositorios propios, no líneas de código. Pulsa un lenguaje para filtrar el índice.</p>
+        <div class="legend" id="legend" role="group" aria-label="Filtrar por lenguaje"></div>
+        <div class="toolbar">
+          <div class="field field-grow">
+            <label class="lbl" for="q">Buscar</label>
+            <input id="q" type="search" placeholder="Nombre, descripción o tema" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" disabled>
+          </div>
+          <div class="field field-sort">
+            <label class="lbl" for="sort">Orden</label>
+            <select id="sort" disabled>
+              <option value="updated">Actualizados</option>
+              <option value="stars">Estrellas</option>
+              <option value="name">Nombre</option>
+            </select>
+          </div>
+          <div class="toolbar-actions">
+            <label class="check" for="forks">
+              <input id="forks" type="checkbox" disabled>
+              Mostrar forks
+            </label>
+            <button type="button" id="reload" class="text-btn" disabled>Actualizar</button>
+          </div>
+        </div>
+        <div id="list" aria-busy="true">
+          <noscript><p class="empty">Para ver los repositorios hace falta JavaScript. También puedes abrir el perfil en <a href="https://github.com/rodoac89?tab=repositories">GitHub</a>.</p></noscript>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Los repositorios se leen de la API pública de GitHub al abrir la página.</p>
+      <p>© <span id="year">2026</span> Rodolfo Aravena Collipal</p>
+    </footer>
+  </div>
+  <script src="main.js" defer></script>
+</body>
+</html>
