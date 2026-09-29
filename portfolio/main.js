@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
 function cacheElements() {
   [
     "theme",
-    "avatar",
     "bio",
     "meta",
     "year",
@@ -263,7 +262,6 @@ function slimUser(user) {
     location: user.location,
     blog: user.blog,
     twitter_username: user.twitter_username,
-    avatar_url: user.avatar_url,
     html_url: user.html_url,
     followers: user.followers,
     created_at: user.created_at,
@@ -305,8 +303,6 @@ function renderProfile() {
   } else {
     els.linkX.hidden = true;
   }
-  const avatar = safeUrl(user.avatar_url);
-  if (avatar) els.avatar.src = avatar;
 }
 
 function setLink(anchor, href) {
